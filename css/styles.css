@@ -1,0 +1,19 @@
+html{
+    max-width: 100%;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+
+}
+
+.img{
+    margin: 0 auto;
+    display : block;
+}
+
+
+.text_const{
+    font-size:50px;
+    font-weight:700;
+}

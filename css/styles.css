@@ -1,15 +1,18 @@
 html{
     max-width: 100%;
+    overflow-x:hidden;
 }
 
 body{
-    font-family: "Open Sans", sans-serif;
+    font-family: Georgia, serif;
+    max-width: 100%;
 
 }
 
 .img{
     margin: 0 auto;
     display : block;
+    margin-top:13%;
 }
 
 
@@ -21,21 +24,29 @@ body{
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,300);
 
 #newsletter{
-    font-family: 'Oswald', sans-serif;
     color: #555;
 }
 
 #signup-form {
-    margin-top: 50px;
+    margin-top: 70px;
 }
 
 #signup-form input[type="text"], #signup-form input[type="email"] {
     border: 0;
-    border-bottom: 1px solid #777;
+    border-bottom: 1px solid #dac9ae;
     box-shadow: none;
     margin: 50px 0;
-    color: #1583cc;
-    font-size: 25px;
+    font-size: 17px;
+    background:none;
+}
+
+input[type="text"]:focus, input[type="email"]:focus{
+    outline: none;
+
+}
+
+input::-webkit-input-placeholder {
+    color: #000000;
 }
 
 #status {
@@ -43,4 +54,48 @@ body{
     font-size: 25px;
     margin-top: 75px;
     color: green;
+}
+
+/*.main{
+    background-image: url('../assets/video/bg.mp4');
+    -webkit-background-size:cover;
+    background-size:cover;
+    background-repeat:no-repeat;
+}*/
+
+.intro_txt{
+    width:60%;
+    margin:0 auto;
+    line-height:30px;
+}
+
+
+
+.button_news{
+    font-size: 22px;
+    padding:16px 25px 16px 25px;
+    border:2px #dac9ae solid;
+    color:#dac9ae;
+    background:none;
+}
+
+footer{
+    margin-top:50px;
+}
+
+video#vid_bg{
+    position: fixed; right:0; bottom:0;
+    min-width:100%;
+    min-height:100%;
+    width:auto; height:auto; z-index:-100;
+    background-size:cover;
+
+}
+
+@media(max-width:850px){
+    video#vid_bg{
+        opacity:0;
+
+    }
+
 }

@@ -3,12 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="Qc-dZR2qLBO8qZOOTdSWnz3HzmPexIJORFHvPYgWjXs" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <meta name="keywords" content="YKONE, Y KONE, KONE">
-
-    <title>Ykone Production</title>
+    <meta name="keywords" content="IKONE, I KONE, KONE">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <title>Ikone Studio</title>
 
     <!-- CSS LINKS -->
     <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -20,31 +21,55 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
-<body>
+<body class="main">
 
 
-    <img class="img" src="assets/img/logo.png"">
-    
-    <div class="row">
-      <div class="large-12 column text-center">
-        <div class="row">
-          <div class="large-6 large-offset-3 column">
-            <div id="signup-form">
-              <h1 class="newsletter">Abonnez vous à notre Newsletter</h1>
-              <form>
-                <input type="text" id="name" placeholder="Entrez votre nom!!">
-                <input type="email" id="email" placeholder="Entre votre Email!!">
-                <input type="submit" id="register" value="Inscrivez-vous!" class="button">
-              </form>
-            </div>
-            <p id="status"></p>
+
+
+
+        <video autoplay loop id="vid_bg">
+            <source src="assets/video/bg.mp4" type="video/mp4">
+        </video>
+
+
+        <img class="img" src="assets/img/logo.png">
+
+        <div class="container">
+            <div class="row">
+                <div class="large-12 column text-center">
+                    <div class="row">
+                        <div class="large-6 large-offset-3 column">
+                        <div id="signup-form">
+                            <div class="intro_txt">À travers des décors et accessoires de qualités fait mains<br />
+                                Vivez les moments du cinéma qui vous ont marqués et devenez à votre tour le héro de votre film</div>
+                            <div class="newsletter intro_txt"><strong>Intéréssé ? Entrez votre mail pour être tenu au courant</strong></div>
+                              <form>
+                                <input type="text" id="name" placeholder="Entrez votre nom"  style="font-style:italic" onclick="texte.placeholder='';"/>
+                                <input type="email" id="email" placeholder="Entrez votre email" style="font-style:italic" onclick="texte.placeholder='';"/>
+                                <input type="submit" id="register" value="Inscrivez-vous" class="button_news">
+                              </form>
+                        </div>
+                            <p id="status"></p>
             
-            <a onclick="javascript:window.location='tapage.htm'; return false;" href="index.html"></a>
+                            <a onclick="javascript:window.location='tapage.htm'; return false;" href="index.html"></a>
+                         </div>
+                    </div>
+                </div>
+
+            </div>
+    </div>
 
 
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <span>©Smash agency - 2016 - pour l’agence IKONE Studio</span>
+            </div>
+        </div>
 
-
-
+    </div>
+</footer>
 
 
 

@@ -1,11 +1,13 @@
 html{
     max-width: 100%;
+    min-height: 100%;
     overflow-x:hidden;
 }
 
 body{
     font-family: Georgia, serif;
     max-width: 100%;
+    min-height: 100%
 
 }
 
@@ -77,6 +79,15 @@ input::-webkit-input-placeholder {
     border:2px #dac9ae solid;
     color:#dac9ae;
     background:none;
+    transition: background 0.5s;
+    transition: color 0,5s;
+}
+
+.button_news:hover{
+    color: white;
+    background: #dac9ae;
+    transition: background 0,50s;
+    transition: color 0,5s;
 }
 
 footer{

@@ -33,9 +33,6 @@ body{
     color: #555;
 }
 
-#signup-form {
-    margin-top: 70px;
-}
 
 #signup-form input[type="text"], #signup-form input[type="email"] {
     border: 0;
@@ -73,6 +70,7 @@ input::-webkit-input-placeholder {
     width:60%;
     margin:0 auto;
     line-height:30px;
+    margin-top:50px;
 }
 
 * {  -moz-box-sizing: border-box; box-sizing: border-box;}
@@ -94,10 +92,6 @@ input::-webkit-input-placeholder {
     transition: color 0,5s;
 }
 
-footer{
-    margin-top:50px;
-}
-
 video#vid_bg{
     position: fixed; right:0; bottom:0;
     min-width:100%;
@@ -107,9 +101,18 @@ video#vid_bg{
 
 }
 
+footer{
+    margin-top:60px;
+}
+
 @media(max-width:850px){
     video#vid_bg{
         opacity:0;
+    }
+
+    .img{
+        width:259px;
+        height:93px;
     }
 
 }

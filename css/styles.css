@@ -21,11 +21,12 @@ body{
     top:0;
     right:0;
     left:0;
+    z-index: -1;
 }
 
 
 video{
-    z-index: 9000;
+    z-index: -2;
 }
 
 
@@ -33,6 +34,7 @@ video{
     margin: 0 auto;
     display : block;
     margin-top:13%;
+    z-index:9000;
 }
 
 

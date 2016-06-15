@@ -23,36 +23,35 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
 </head>
+
+
 <body class="main">
-
-
-
-
 
         <video autoplay loop id="vid_bg">
             <source src="assets/video/bg.mp4" type="video/mp4">
         </video>
-        <div id="wrapper">
-        <div class="container" id="container-central">
-            <img id="logo" src="assets/img/logo.png" alt="logo Ikone">
-            
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <div class="intro_txt">À travers des décors et accessoires de qualités faits main,<br />
-                        revivez les moments du cinéma qui vous ont marqués et devenez à votre tour le héros de votre film.</div>
+
+        <img class="img" src="assets/img/logo.png" alt="logo Ikone">
+
+        <div id="wrapper"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <div class="intro_txt">À travers des décors et accessoires de qualités faits main,<br />
+                            revivez les moments du cinéma qui vous ont marqués et devenez à votre tour le héros de votre film.</div>
 
                         <div id="signup-form">
                             <div class="newsletter"><strong>Entrez votre mail pour être tenu au courant</strong></div>
-                              <form>
+                             <form>
                                 <input type="email" id="email" required="required" placeholder="Votre email" style="font-style:italic" onFocus="old=this.placeholder; this.placeholder='';" onblur="this.placeholder=old;"/>
                                 <input class="button_news" type="submit" id="register" value="Inscription">
                               </form>
                         </div>
-                        <div id="RS">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                            <a href="#"><i class="fa fa-youtube"></i></a>
+                        <div class="col-lg-12" id="RS">
+                            <a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+                            <a href="#"><i class="fa fa-instagram fa-2x"></i></a>
+                            <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                            <a href="#"><i class="fa fa-youtube fa-2x"></i></a>
                         </div>
                             <p id="status"></p>
             
@@ -62,13 +61,13 @@
                 </div>
 
             </div>
-        </div>
+
 
 
 <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center" id="copyright">
+                <div class="col-md-12 text-center">
                     ©Smash agency - 2016 - pour l’agence IKONE Studio
                 </div>
             </div>
@@ -85,8 +84,7 @@
 <!-- JS LINK -->
 
 <script src="js/script.js"></script>
-<script src="js/jquery-1.10.1.min.js"></script>
-<script src="js/jquery-3.0.0.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/newsletter.js"></script>
 <script src="dist/sweetalert.min.js"></script>
 <script src="https://cdn.firebase.com/js/client/2.0.4/firebase.js"></script>

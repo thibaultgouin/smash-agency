@@ -6,7 +6,7 @@ html, body{
 }
 
 body{
-    font-family: 'Open Sans', 'Helvetica', sans-serif;
+    font-family: Georgia, serif;
     width: 100%;
     display:table;
     min-height: 100%;
@@ -17,13 +17,22 @@ body{
 #wrapper {
     background-color: rgba(0, 0, 0, 0.4);
     height: 100%;
+    position:absolute;
+    top:0;
+    right:0;
+    left:0;
 }
 
-#logo{
+
+video{
+    z-index: 9000;
+}
+
+
+.img{
     margin: 0 auto;
     display : block;
-    margin-top: 10%;
-    width: 50%;
+    margin-top:13%;
 }
 
 
@@ -34,12 +43,6 @@ body{
 
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,300);
 
-#container-central {
-    width: 60%;
-    position: absolute;
-    top: 50%;
-    left: 20%;
-}
 
 #signup-form {
     margin-top: 20px;
@@ -49,6 +52,7 @@ body{
 .newsletter{
     color: #fff;
     margin-bottom: 15px;
+    font-size:17px;
 }
 
 #name {
@@ -89,10 +93,10 @@ input::-webkit-input-placeholder {
 .intro_txt{
     width:90%;
     margin:0 auto;
-    line-height:16px;
+    line-height:25px;
     margin-top:50px;
     color: #fff;
-    font-size: 13px;
+    font-size: 16px;
 }
 
 .text-center {
@@ -111,7 +115,6 @@ input::-webkit-input-placeholder {
     font-size: 13px;
     width: 150px;
     margin-left: -5px;
-    background:none;
     background-color: rgba(255, 255, 255, 1);
     line-height: 20px;
 }
@@ -127,10 +130,9 @@ input::-webkit-input-placeholder {
     margin-top: 40px;   
 }
 
-    #RS a {
-        margin: 0 8px;
-        color: #fff;
-        font-size: 16px;
+#RS a {
+    padding:20px;
+    color: #fff;
     }
 
 video#vid_bg{
@@ -143,23 +145,18 @@ video#vid_bg{
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
-    background: url('images/poster.jpg') no-repeat;
     background-size: cover;
     transition: 1s opacity;
 }
 
-/* FOOTER */
 
 footer{
     position: absolute;
     width: 100%;
     bottom: 10px;
+    font-size:12px;
 }
 
-    #copyright {
-        font-size: 9px; 
-        color: #fff;
-    }
 
 
 @media(max-width:850px){
@@ -174,3 +171,27 @@ footer{
 
 }
 
+@media(max-width:548px) {
+    #RS a {
+        padding: 5px;
+    }
+
+    .img{
+        width:251px;
+        height:90px;
+    }
+
+}
+
+@media(max-width:420px) {
+
+    footer{
+        position:inherit;
+        width: 100%;
+    }
+
+    .button_news{
+        margin-top:10px;
+    }
+
+}

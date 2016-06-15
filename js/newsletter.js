@@ -1,23 +1,25 @@
 $(document).ready(function(){
-   
-   
-   // Firebase ref
-   var ref = new Firebase("https://ykone.firebaseio.com/users");
-   
-   $("#signup-form").on("submit", function(e) {
-       e.preventDefault();
-       var name = $("#name").val();
-       var email = $("#email").val();
-        
+
+
+    // Firebase ref
+    var ref = new Firebase("https://ykone.firebaseio.com/users");
+
+    $("#signup-form").on("submit", function(e) {
+        e.preventDefault();
+        var email = $("#email").val();
+
         ref.push({
-            name: name,
             email: email
         });
-        
-        $("#signup-form").hide();
-        document.location.href="index.html";
 
-        
+        $("#signup-form").hide();
+       /* swal({   title: "MERCI",   text: "Votre inscription a bien été prise en compte",   timer: 3000,   showConfirmButton: false }); */
+        setTimeout(function () {
+            window.location.href = "index.html"; //will redirect to your blog page (an ex: blog.html)
+        }/* , 3000 */); //will call the function after 2 secs.;
+
+
+
     });
-  
+
 });
